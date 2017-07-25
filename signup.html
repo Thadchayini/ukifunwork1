@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Play & Listen</title>
+    <link rel="shortcut icon" href="fasion.ico">
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- save data script -->
+<script>
+
+var name=new Array();
+var email=new Array();
+var password=new Array();
+
+function insert(val){
+  title[title.length]=val;
+  }
+
+function show() {
+  var string="<b>All Elements of the Array :</b><br>";
+  for(i = 0; i < title.length; i++) {
+  string =string+title[i]+"<br>";
+  }
+  if(title.length > 0)
+ document.getElementById('myDiv').innerHTML = string;
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid" style="box-shadow: 0 0 5px black;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="add.html">Add</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<div style="margin: auto;
+width:25%;
+padding:10px;">
+<div class="col-40">
+  <div class="thumbnail">
+                <h3><center><b>Sign up</b></center></h3>
+
+                  <!-- <span class="input-group-addon" id="sizing-addon1">@</span> -->
+
+<div id="form">
+
+                <form class="form-signin" action="#">
+                  <div class="form-group">
+                        <label for="name"></label> <input id="name" type="text" placeholder="Name"  class="form-control" >
+                  </div>
+                <div class="form-group">
+                      <label for="email"></label><input id="email" type="text"placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                      <label for="password"></label><input id="password" type="password"placeholder="Password" class="form-control">
+                </div>
+<p>By clicking on Sign up, you agree to <b>terms & conditions</b> and <b>privacy policy</b><br>
+                <button type="submit" class="btn btn-primary btn-block" value="Sign up" onclick="insert(this.form.title.value)">
+                    Sign up</button>
+                    <p>Already have an account? <a href="login.html">Log in now </a></p>
+                </form>
+                </div>
+                </div>
+  			</div>
+    		</div>
+    	</div>
+    </div>
+
+</body>
+</html>
